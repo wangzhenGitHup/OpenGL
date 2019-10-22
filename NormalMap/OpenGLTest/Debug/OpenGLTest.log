@@ -1,0 +1,30 @@
+﻿生成启动时间为 2019/10/21 18:11:44。
+     1>项目“G:\openGL_Work\NormalTexture\OpenGLTest\OpenGLTest.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\vs2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\glad\src\glad.c
+         glad.c
+         D:\vs2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Camera.cpp LoadImage.cpp main.cpp Mesh.cpp Model.cpp Shader.cpp stb_image.cpp
+         stb_image.cpp
+         Shader.cpp
+         Model.cpp
+         Mesh.cpp
+         main.cpp
+         LoadImage.cpp
+         Camera.cpp
+         正在生成代码...
+       Link:
+         D:\vs2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\openGL_Work\NormalTexture\Debug\OpenGLTest.exe" /INCREMENTAL /NOLOGO glfw3.lib opengl32.lib assimpd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\openGL_Work\NormalTexture\Debug\OpenGLTest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\openGL_Work\NormalTexture\Debug\OpenGLTest.lib" /MACHINE:X86 Debug\glad.obj
+         Debug\Camera.obj
+         Debug\LoadImage.obj
+         Debug\main.obj
+         Debug\Mesh.obj
+         Debug\Model.obj
+         Debug\Shader.obj
+         Debug\stb_image.obj
+     1>LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+         OpenGLTest.vcxproj -> G:\openGL_Work\NormalTexture\Debug\OpenGLTest.exe
+     1>已完成生成项目“G:\openGL_Work\NormalTexture\OpenGLTest\OpenGLTest.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:07.15
