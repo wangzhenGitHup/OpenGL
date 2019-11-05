@@ -22,6 +22,7 @@ uniform vec3 viewPos;
 void main()
 {
 	vec3 normal = texture(normalMap, fs_in.TexCoords).rgb;
+	//将法线向量转换为范围[-1,1]
 	normal = normalize(normal* 2.0 - 1.0);
 	
 	vec3 color = texture(diffuseMap, fs_in.TexCoords).rgb;

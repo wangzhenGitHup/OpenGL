@@ -267,13 +267,16 @@ void renderQuad()
 		glm::vec3 tangent1, tangent2;
 		glm::vec3 bitangent1, bitangent2;
 
+		//求得2条边
 		glm::vec3 edge1 = pos2 - pos1;
 		glm::vec3 edge2 = pos3 - pos1;
+		//求得顶点纹理坐标的差值
 		glm::vec2 deltaUV1 = uv2 - uv1;
 		glm::vec2 deltaUV2 = uv3 - uv1;
 
+		//行列式的倒数值
 		GLfloat inverse = 1.0f / (deltaUV1.x * deltaUV2.y - deltaUV2.x * deltaUV1.y);
-
+		//行列式倒数值 乘以 逆矩阵 求得 切线和副切线向量
 		tangent1.x = inverse * (deltaUV2.y * edge1.x - deltaUV1.y * edge2.x);
 		tangent1.y = inverse * (deltaUV2.y * edge1.y - deltaUV1.y * edge2.y);
 		tangent1.z = inverse * (deltaUV2.y * edge1.z - deltaUV1.y * edge2.z);
@@ -290,8 +293,10 @@ void renderQuad()
 		deltaUV1 = uv3 - uv1;
 		deltaUV2 = uv4 - uv1;
 
+		//行列式的倒数值
 		inverse = 1.0f / (deltaUV1.x * deltaUV2.y - deltaUV2.x * deltaUV1.y);
 
+		//行列式倒数值 乘以 逆矩阵 求得 切线和副切线向量
 		tangent2.x = inverse * (deltaUV2.y * edge1.x - deltaUV1.y * edge2.x);
 		tangent2.y = inverse * (deltaUV2.y * edge1.y - deltaUV1.y * edge2.y);
 		tangent2.z = inverse * (deltaUV2.y * edge1.z - deltaUV1.y * edge2.z);
